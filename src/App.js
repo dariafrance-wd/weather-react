@@ -9,6 +9,13 @@ function App() {
         <div>
           {" "}
           <Weather />
+          <p className="source">
+            <a href="https://github.com/dariafrance-wd/weather-react">
+              {" "}
+              Open-source{" "}
+            </a>{" "}
+            code, by Daria Samoilenko from She Codes
+          </p>
         </div>
       </header>
     </div>
