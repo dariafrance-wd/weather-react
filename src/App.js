@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <div>
           {" "}
-          <Weather />
+          <Weather defaultCity="Kyiv" />
           <p className="source">
             <a href="https://github.com/dariafrance-wd/weather-react">
               {" "}
