@@ -1,13 +1,17 @@
 import React from "react";
 import "./Weather.css";
 import "./App.css";
+import axios from "axios";
 
 export default function Weather() {
+  const apiKey = "2ff29bed3181c3526c35cc5408037f85";
+  let city = "Kyiv";
+  const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?weather?q=${city}&appid=${apiKey}&units=metric`;
   let weatherData = {
-    city: "Warsaw",
+    city: "Kyiv",
     date: "Tuesday 10:00",
     desc: "Cloudy",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/cloudy.png",
+    imgUrl: "http://openweathermap.org/img/wn/02d@2x.png",
     humidity: 90,
     wind: 13,
   };
@@ -41,8 +45,8 @@ export default function Weather() {
           <div className="d-flex weather-temperature">
             <img src={weatherData.imgUrl} alt={weatherData.desc} />
             <span className="weatherNow">
-              <strong id="temperature"></strong>
-              <span className="units">-1°C </span>
+              <strong id="temperature">-1</strong>
+              <span className="units">°C</span>
             </span>
           </div>
         </div>
