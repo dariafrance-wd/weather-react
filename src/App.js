@@ -10,7 +10,11 @@ function App() {
           {" "}
           <Weather defaultCity="Kyiv" />
           <p className="source">
-            <a href="https://github.com/dariafrance-wd/weather-react">
+            <a
+              href="https://github.com/dariafrance-wd/weather-react"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               Open-source{" "}
             </a>{" "}

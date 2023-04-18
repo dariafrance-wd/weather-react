@@ -79,3 +79,8 @@
 .source {
   color: aliceblue;
 }
+@media (max-width: 500px) {
+  .unitsF {
+    display: none;
+  }
+}
